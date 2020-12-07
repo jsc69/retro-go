@@ -1,0 +1,5 @@
+set(COMPONENT_SRCDIRS ". hw_cpu ngp ngp/TLCS-900h sound")
+set(COMPONENT_ADD_INCLUDEDIRS ". include hw_cpu hw_cpu/z80-fuse ngp ngp/TLCS-900h sound")
+set(COMPONENT_REQUIRES "retro-go")
+register_component()
+rg_setup_compile_options(-Wno-all -Wno-error -Wno-sequence-point)
