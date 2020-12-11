@@ -1,0 +1,5 @@
+set(COMPONENT_SRCDIRS "source source/audio source/disassembler source/graphics")
+set(COMPONENT_ADD_INCLUDEDIRS "include include/ameteor include/ameteor/audio include/ameteor/disassembler include/ameteor/graphics")
+set(COMPONENT_REQUIRES "retro-go")
+register_component()
+rg_setup_compile_options(-Wno-all -Wno-error -Wno-sequence-point -fno-exceptions -fno-rtti)
